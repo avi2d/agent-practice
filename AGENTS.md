@@ -1,0 +1,23 @@
+# Project agent memory
+
+agent-practice holds the owner's written positions on running coding agents, and `README.md` holds what a person reads.
+`VISION.md` holds what the pages are for and what they refuse, so read it before you add a topic.
+
+## Writing a topic page
+
+- Start each page from `templates/topic.md`, and keep every part [The topic pages](docs/topics/README.md) lists.
+- Open one page under `docs/topics/` per pull request, and leave every merge to the owner.
+- Write a topic with no existing text only from the owner's answers, asked one topic at a time, as `VISION.md` says.
+- Name each tool by the role it plays, such as the review pipeline or the fleet supervisor, never by its product name, as `VISION.md` says.
+
+## Sources
+
+- Link every claim to its source, in a form [Sources](docs/topics/README.md#sources) lists.
+- Read the community through the `guild` MCP server, which is [the community server](https://web.nexttick.it/mcp).
+- Copy the owner's own community answers whole, and retell anyone else's thought in your own words, as `VISION.md` says.
+- Name no other community member in `docs/topics/`, a commit or a pull request.
+
+## Going public
+
+- Write no machine name, host, address, home folder path or account name in `docs/topics/`, a commit or a pull request.
+- Write for a stranger, because the pages in `docs/topics/` go public once the owner opens them.
