@@ -62,6 +62,7 @@ A passing lint ends with `checks-lint: <count> gate(s) pass`.
 | --- | --- |
 | `VISION.md` | what the pages are for and what they refuse |
 | `docs/topics/` | one page per topic |
+| `docs/blog/` | selected article topics and a Markdown example |
 | `docs/topics/README.md` | the parts of a topic page and the link forms of a source |
 | `templates/topic.md` | the template a topic page starts from |
 | `templates/` | the checks kit's templates for every other doc |
