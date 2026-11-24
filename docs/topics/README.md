@@ -11,7 +11,7 @@ A topic page under `docs/topics/` is an explanation page that holds one position
 | --- | --- |
 | the lead | the position, in one sentence |
 | `## Why` | the reasons for the position, each with a link to its source |
-| `## Where the setup holds it` | each step of the setup, named by the role it plays, with a link to the file and line that holds it |
+| `## Where the setup holds it` | each step of the setup with a link to the file and line that holds it. Orc, skills, Checks and Subquo go by name, and any other tool by its role. |
 | `## What did not work` | each approach tried and abandoned, with the reason it failed |
 | `## Related topics` | the other topic pages the position leans on |
 
