@@ -34,7 +34,8 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 - Community content stays with the community, and a page takes from it only what the stance above allows.
 - A site or a CV built from the pages belongs to the work that builds it, and this repository holds only the text.
 - The site is a GitHub Pages site of its own, and my personal website carries none of this text.
-- The articles are in Russian, and English versions wait until the results layer is written.
+- The public text of all three layers is the articles in `docs/blog/`, and the English pages in `docs/topics/` are my working positions those articles draw on.
+- The articles in `docs/blog/` are in Russian, and English versions wait until the results layer is written.
 
 A change aligns when it makes one position, tool or result clearer to a stranger, or links it closer to the file that holds it.
 A change should be resisted when it adds a claim with no source, a person's name, a private project's name or a private detail.

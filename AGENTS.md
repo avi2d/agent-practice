@@ -10,6 +10,7 @@ agent-practice holds the owner's written positions on running coding agents, and
 - Write a topic with no existing text only from the owner's answers, asked one topic at a time, as `VISION.md` says.
 - Name the owner's own tools Orc, skills, Checks and Subquo by name, and every other tool by the role it plays, such as the review pipeline, as `VISION.md` says.
 - Write articles under `docs/blog/` by [Правила для статей](docs/blog/reader-guide.md).
+- Keep the pages in `docs/topics/` as the owner's English working positions, because the public text of every layer is the Russian articles in `docs/blog/`.
 
 ## Sources
 
