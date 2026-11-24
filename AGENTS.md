@@ -8,7 +8,7 @@ agent-practice holds the owner's written positions on running coding agents, and
 - Start each page from `templates/topic.md`, and keep every part [The topic pages](docs/topics/README.md) lists.
 - Open one page under `docs/topics/` per pull request, and leave every merge to the owner.
 - Write a topic with no existing text only from the owner's answers, asked one topic at a time, as `VISION.md` says.
-- Name each tool by the role it plays, such as the review pipeline or the fleet supervisor, never by its product name, as `VISION.md` says.
+- Name the owner's own tools Orc, skills, Checks and Subquo by name, and every other tool by the role it plays, such as the review pipeline, as `VISION.md` says.
 
 ## Sources
 

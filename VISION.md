@@ -1,16 +1,20 @@
 # Vision
 
-Every choice in how I run coding agents is written down once, with its reason and the place it runs.
-It serves me first, and then anyone who reads my positions on agent work.
-It owns the written positions, one page per topic.
+Every choice in how I run coding agents is written down once, with its reason, the tool that carries it and the result it gave.
+It serves me first, and then a stranger, a hiring reader included, who wants to know how I work with agents.
+It owns the text in three layers: my positions on agent work, the tools I build and use, and the results they gave.
 
 ## The code is the documentation
 
 - It allows a claim linked to the line that holds it, it forbids an unbacked claim, and it takes the trade of leaving out what no file shows.
 
-## Roles, not products
+## My tools by name, others by role
 
-- It allows naming each tool by its role, it forbids naming the product behind it, and it takes the trade of a reader who cannot look it up.
+- It allows naming my own tools Orc, skills, Checks and Subquo with a link to each repository, it forbids naming another company's product, and it takes the trade of a reader who cannot look that product up.
+
+## Results counted from the record
+
+- It allows naming a public project with its merged pull requests, it forbids naming a private project, and it takes the trade of private work showing only in totals.
 
 ## My words whole, others retold
 
@@ -18,7 +22,7 @@ It owns the written positions, one page per topic.
 
 ## Written to go public
 
-- It allows only what a stranger may read, it forbids machine names, hosts, addresses and private paths, and it takes the trade of examples with made-up names.
+- It allows only what a stranger may read, it forbids machine names, hosts, addresses, private paths and the settings of my own machines such as a time limit on one call, and it takes the trade of examples with made-up names.
 
 ## A new topic starts from my answers
 
@@ -28,7 +32,9 @@ It owns the written positions, one page per topic.
 
 - The setup the pages describe lives in its own repositories, and a page links to it rather than copying it.
 - Community content stays with the community, and a page takes from it only what the stance above allows.
-- A site or a resume built from the pages belongs to the work that builds it, and this repository holds only the text.
+- A site or a CV built from the pages belongs to the work that builds it, and this repository holds only the text.
+- The site is a GitHub Pages site of its own, and my personal website carries none of this text.
+- The articles are in Russian, and English versions wait until the results layer is written.
 
-A change aligns when it makes one position clearer or links it closer to the file that holds it.
-A change should be resisted when it adds a claim with no source, a person's name or a private detail.
+A change aligns when it makes one position, tool or result clearer to a stranger, or links it closer to the file that holds it.
+A change should be resisted when it adds a claim with no source, a person's name, a private project's name or a private detail.
