@@ -14,10 +14,15 @@
   "type": "module",
   "scripts": {
     "build": "checks-effect-scope",
+    "results": "bun src/index.ts",
     "lint": "oxlint && checks-lint",
     "typecheck": "tsc --noEmit && effect-tsgo diagnostics --project tsconfig.json --format text --strict",
     "test": "checks-test",
+    "test:unit": "checks-test --tier=unit",
     "test:fast": "checks-test --changed"
+  },
+  "dependencies": {
+    "effect": "4.0.0"
   },
   "devDependencies": {
     "@avi2dg/checks": "0.112.0",
