@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-24T17:49:18.562Z",
+  "authors": [
+    "avi2d"
+  ],
+  "period": {
+    "from": "2008-01-01",
+    "through": "2026-11-23"
+  },
+  "totals": {
+    "projectsSupported": 23,
+    "mergedPullRequests": 2179,
+    "ciRuns": 14012
+  },
+  "byMonth": [
+    {
+      "month": "2026-08",
+      "mergedPullRequests": 1
+    },
+    {
+      "month": "2026-09",
+      "mergedPullRequests": 180
+    },
+    {
+      "month": "2026-10",
+      "mergedPullRequests": 784
+    },
+    {
+      "month": "2026-11",
+      "mergedPullRequests": 1214
+    }
+  ],
+  "publicProjects": [
+    {
+      "repository": "avi2d/checks",
+      "mergedPullRequests": 158,
+      "ciRuns": 1793
+    },
+    {
+      "repository": "avi2d/firstmate",
+      "mergedPullRequests": 214,
+      "ciRuns": 694
+    },
+    {
+      "repository": "avi2d/firstmate-lean",
+      "mergedPullRequests": 53,
+      "ciRuns": 253
+    },
+    {
+      "repository": "avi2d/local-apps",
+      "mergedPullRequests": 4,
+      "ciRuns": 22
+    },
+    {
+      "repository": "avi2d/no-mistakes",
+      "mergedPullRequests": 87,
+      "ciRuns": 975
+    },
+    {
+      "repository": "avi2d/orc",
+      "mergedPullRequests": 267,
+      "ciRuns": 1435
+    },
+    {
+      "repository": "avi2d/pi-claude-bridge",
+      "mergedPullRequests": 29,
+      "ciRuns": 22
+    },
+    {
+      "repository": "avi2d/skills",
+      "mergedPullRequests": 112,
+      "ciRuns": 504
+    },
+    {
+      "repository": "avi2d/subquo",
+      "mergedPullRequests": 7,
+      "ciRuns": 42
+    },
+    {
+      "repository": "avi2d/workflows",
+      "mergedPullRequests": 84,
+      "ciRuns": 465
+    }
+  ],
+  "nonPublic": {
+    "projectsSupported": 13,
+    "mergedPullRequests": 1164,
+    "ciRuns": 7807
+  }
+}
