@@ -18,6 +18,7 @@
     "lint": "oxlint && checks-lint",
     "typecheck": "tsc --noEmit && effect-tsgo diagnostics --project tsconfig.json --format text --strict",
     "test": "checks-test",
+    "test:unit": "checks-test --tier=unit",
     "test:fast": "checks-test --changed"
   },
   "dependencies": {
