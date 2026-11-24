@@ -11,7 +11,8 @@ kind: explanation
 
 ## Where the setup holds it
 
-<Each step of the setup, named by the role it plays, with a link to the file and line that holds it.>
+<Each step of the setup, with a link to the file and line that holds it.
+Name Orc, skills, Checks and Subquo by name, and any other tool by its role.>
 
 ## What did not work
 
