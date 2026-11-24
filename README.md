@@ -1,7 +1,8 @@
 # agent-practice
 
 How and why I work with coding agents.
-Each page under `docs/topics/` takes one topic, such as quality gates, subagents or evals, and states my position on it.
+The Russian articles in [`docs/blog/`](docs/blog/README.md) are the text to read, with the sources and evidence limits for each thesis.
+Each page under `docs/topics/` takes one topic, such as quality gates, subagents or evals, and holds my English working position on it, which the articles draw on.
 A page gives the reasons, links to the file and line that carry the position, and names what did not work.
 
 ## Before you begin
@@ -70,5 +71,6 @@ A passing lint ends with `checks-lint: <count> gate(s) pass`.
 
 ## Related topics
 
+- [The articles](docs/blog/README.md)
 - [The topic pages](docs/topics/README.md)
 - [The checks kit](https://github.com/avi2d/checks)
