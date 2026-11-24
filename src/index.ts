@@ -1,19 +1,17 @@
 import { Effect, Schema } from "effect";
-import { collectMerges, countWorkflowRuns, type GitHubCli } from "./github.ts";
+import { collectMerges } from "./github.ts";
 import { countMerges, createSnapshot, parseDay, renderSummary } from "./results.ts";
 
-const usage = "Usage: bun run results [--gh-axi] YYYY-MM-DD YYYY-MM-DD AUTHOR [AUTHOR ...]";
+const usage = "Usage: bun run results YYYY-MM-DD YYYY-MM-DD AUTHOR [AUTHOR ...]";
 
 class SnapshotError extends Schema.TaggedError<SnapshotError>()("SnapshotError", {
   message: Schema.String,
 }) {}
 
 function readScope(args: readonly string[]) {
-  const cli: GitHubCli = args[0] === "--gh-axi" ? "gh-axi" : "gh";
-  const positionals = cli === "gh-axi" ? args.slice(1) : args;
-  const start = positionals.at(0);
-  const end = positionals.at(1);
-  const logins = positionals.slice(2);
+  const start = args.at(0);
+  const end = args.at(1);
+  const logins = args.slice(2);
   if (start === undefined || end === undefined || logins.length === 0) return undefined;
 
   const from = parseDay(start);
@@ -25,7 +23,7 @@ function readScope(args: readonly string[]) {
 
   if (!logins.every((login) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/i.test(login) && login.length <= 39)) return undefined;
   const authors = [...new Set(logins.map((login) => login.toLowerCase()))].sort();
-  return { cli, generatedAt, authors, period: { from, through } };
+  return { generatedAt, authors, period: { from, through } };
 }
 
 const snapshot = Effect.fnUntraced(function*(args: readonly string[]) {
@@ -39,14 +37,8 @@ const snapshot = Effect.fnUntraced(function*(args: readonly string[]) {
     return yield* new SnapshotError({ message: `${usage}\nUse a complete period in UTC and at least one GitHub login.` });
   }
 
-  const batches = yield* Effect.forEach(scope.authors, (author) => collectMerges(scope.cli, author, scope.period));
-  const { byMonth, projects } = countMerges(batches.flat());
-  const counts = yield* Effect.forEach(projects, (project) =>
-    countWorkflowRuns(scope.cli, project.repository.nameWithOwner, scope.period).pipe(
-      Effect.map((ciRuns) => ({ ...project, ciRuns })),
-    ), { concurrency: 6 });
-
-  const result = createSnapshot(scope, byMonth, counts);
+  const batches = yield* Effect.forEach(scope.authors, (author) => collectMerges(author, scope.period));
+  const result = createSnapshot(scope, countMerges(batches.flat()));
   const base = `data/results/${result.generatedAt.slice(0, 10)}`;
   yield* Effect.tryPromise({
     try: () => Bun.write(`${base}.json`, `${JSON.stringify(result, null, 2)}\n`),
