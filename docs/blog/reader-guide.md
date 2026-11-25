@@ -138,7 +138,7 @@ kind: reference
 - [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system): число приводится вместе с условиями сравнения, а цена решения названа прямо
 - [Don’t Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents): принцип сформулирован одной фразой и выведен из сбоя на примере
 - [The definitive guide to Durable Execution](https://temporal.io/blog/what-is-durable-execution): определение одной фразой, затем свойства под своими заголовками
-- [Embracing the parallel coding agent lifestyle](https://simonwillison.net/2025/Oct/5/parallel-coding-agents/): автор говорит от первого лица и опирается на свою практику
+- [Embracing the parallel coding agent lifestyle](https://simonwillison.net/2025/Oct/5/parallel-coding-agents/): автор опирается на свою практику
 - [There Are No Instances in atproto](https://overreacted.io/there-are-no-instances-in-atproto/): объяснение идёт от картинки к картинке, и каждая меняет на прошлой одну вещь
 - [Как оформить мнение](https://habr.com/ru/docs/authors/opinion/): заголовок и текст держат одну позицию и приводят доводы
 - [Как оформить публикацию](https://habr.com/ru/docs/authors/design/): короткие абзацы, картинки между абзацами и заголовки, которые говорят, что дальше
