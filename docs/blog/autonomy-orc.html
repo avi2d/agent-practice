@@ -46,6 +46,6 @@ document.getElementById('count').textContent=(i+1)+' из '+N.length;const w=doc
 hots.forEach((h,i)=>{h.addEventListener('click',()=>show(i));h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(i)}})});
 const prev=document.getElementById('prev'),next=document.getElementById('next');prev.disabled=true;
 prev.onclick=()=>cur>0&&show(cur-1);next.onclick=()=>show(Math.min(cur+1,N.length-1));
-document.addEventListener('keydown',e=>{if(e.target.closest&&e.target.closest('button'))return;if(e.key==='ArrowRight')next.click();if(e.key==='ArrowLeft')prev.click()});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next.click();if(e.key==='ArrowLeft')prev.click()});
 document.getElementById('count').textContent=N.length+' шагов';
 </script></body></html>
