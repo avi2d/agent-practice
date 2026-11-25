@@ -15,6 +15,7 @@ agent-practice holds the owner's written positions on running coding agents, and
 ## Sources
 
 - Link every claim to its source, in a form [Sources](docs/topics/README.md#sources) lists.
+- Link a vision article under `docs/blog/` by [Правила для статей](docs/blog/reader-guide.md) instead, as `VISION.md` says.
 
 ## Going public
 

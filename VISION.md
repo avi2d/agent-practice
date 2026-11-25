@@ -7,6 +7,7 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 ## The code is the documentation
 
 - It allows a claim linked to the line that holds it, it forbids an unbacked claim, and it takes the trade of leaving out what no file shows.
+- An article that states my vision of how my tool should work is my position rather than a claim about the code, so it links the tool and its docs instead of a line per sentence, and it takes the trade of a reader who cannot check each sentence against a file.
 
 ## My tools by name, others by role
 
