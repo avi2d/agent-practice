@@ -16,10 +16,6 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 
 - It allows naming a public project with its merged pull requests, it forbids naming a private project, and it takes the trade of private work showing only in totals.
 
-## My words whole, others retold
-
-- It allows my own answers whole and others' thoughts retold, it forbids naming or quoting another person, and it takes the trade of citations that name no one.
-
 ## Written to go public
 
 - It allows only what a stranger may read, it forbids machine names, hosts, addresses, private paths and the settings of my own machines such as a time limit on one call, and it takes the trade of examples with made-up names.
