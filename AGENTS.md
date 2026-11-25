@@ -15,9 +15,6 @@ agent-practice holds the owner's written positions on running coding agents, and
 ## Sources
 
 - Link every claim to its source, in a form [Sources](docs/topics/README.md#sources) lists.
-- Read the community through the `guild` MCP server, which is [the community server](https://web.nexttick.it/mcp).
-- Copy the owner's own community answers whole, and retell anyone else's thought in your own words, as `VISION.md` says.
-- Name no other community member in `docs/topics/`, `docs/blog/`, a commit or a pull request.
 
 ## Going public
 

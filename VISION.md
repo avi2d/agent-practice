@@ -18,7 +18,7 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 
 ## My words whole, others retold
 
-- It allows my own answers whole and others' thoughts retold, it forbids naming or quoting another member, and it takes the trade of citations that name no one.
+- It allows my own answers whole and others' thoughts retold, it forbids naming or quoting another person, and it takes the trade of citations that name no one.
 
 ## Written to go public
 
@@ -31,7 +31,6 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 ## Scope
 
 - The setup the pages describe lives in its own repositories, and a page links to it rather than copying it.
-- Community content stays with the community, and a page takes from it only what the stance above allows.
 - A site or a CV built from the pages belongs to the work that builds it, and this repository holds only the text.
 - The site is a GitHub Pages site of its own, and my personal website carries none of this text.
 - The public text of all three layers is the articles in `docs/blog/`, and the English pages in `docs/topics/` are my working positions those articles draw on.
