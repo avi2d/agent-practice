@@ -49,7 +49,7 @@ kind: explanation
 ## Related topics
 
 - [Выбранные тезисы](theses.md)
-- [Оркестрация и параллельная работа](orchestration.md)
+- [Оркестрация агентов](orchestration.md)
 - [Безопасность и секреты](security.md)
 
 [owner]: https://github.com/avi2d/orc/blob/6b8142d4288f592f0615a14ae286967f12357751/VISION.md#L15-L17

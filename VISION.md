@@ -7,6 +7,7 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 ## The code is the documentation
 
 - It allows a claim linked to the line that holds it, it forbids an unbacked claim, and it takes the trade of leaving out what no file shows.
+- An article that states my vision of how my tool should work is my position rather than a claim about the code, so it links the tool and its docs instead of a line per sentence, and it takes the trade of a reader who cannot check each sentence against a file.
 
 ## My tools by name, others by role
 
@@ -15,10 +16,6 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 ## Results counted from the record
 
 - It allows naming a public project with its merged pull requests, it forbids naming a private project, and it takes the trade of private work showing only in totals.
-
-## My words whole, others retold
-
-- It allows my own answers whole and others' thoughts retold, it forbids naming or quoting another member, and it takes the trade of citations that name no one.
 
 ## Written to go public
 
@@ -31,7 +28,6 @@ It owns the text in three layers: my positions on agent work, the tools I build 
 ## Scope
 
 - The setup the pages describe lives in its own repositories, and a page links to it rather than copying it.
-- Community content stays with the community, and a page takes from it only what the stance above allows.
 - A site or a CV built from the pages belongs to the work that builds it, and this repository holds only the text.
 - The site is a GitHub Pages site of its own, and my personal website carries none of this text.
 - The public text of all three layers is the articles in `docs/blog/`, and the English pages in `docs/topics/` are my working positions those articles draw on.

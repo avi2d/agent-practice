@@ -44,7 +44,7 @@ kind: explanation
 
 - [Выбранные тезисы](theses.md)
 - [Выбор модели и уровня рассуждения](models.md)
-- [Оркестрация и параллельная работа](orchestration.md)
+- [Оркестрация агентов](orchestration.md)
 
 [acon]: https://arxiv.org/abs/2510.00615v3
 [threshold]: https://github.com/avi2d/skills/blob/5521c76d2f30ed64d18a94e083e8930bd4706849/docs/adr/0043-a-compaction-point-is-a-per-model-reserve-in-pi-settings.md#L31-L66

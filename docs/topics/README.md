@@ -23,7 +23,6 @@ A topic page under `docs/topics/` is an explanation page that holds one position
 | --- | --- |
 | a file and line in a repository | a GitHub permalink at a commit, as in `https://github.com/acme/tools/blob/<commit>/src/run.ts#L12` |
 | a change | the pull request or commit URL |
-| a community answer | the link the community server returns with the answer |
 
 ## Related topics
 
