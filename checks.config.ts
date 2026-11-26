@@ -1,3 +1,3 @@
 import { defineConfig } from "@avi2dg/checks/config";
 
-export default defineConfig({});
+export default defineConfig({ repositoryVisibility: "public" });
