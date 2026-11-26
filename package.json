@@ -15,7 +15,7 @@
   "scripts": {
     "build": "checks-effect-scope",
     "results": "bun src/index.ts",
-    "lint": "oxlint && checks-lint",
+    "lint": "oxlint && checks-lint && sh scripts/check-blog-phrases.sh",
     "typecheck": "tsc --noEmit && effect-tsgo diagnostics --project tsconfig.json --format text --strict",
     "test": "checks-test",
     "test:unit": "checks-test --tier=unit",
