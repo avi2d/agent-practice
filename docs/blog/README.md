@@ -11,7 +11,7 @@ kind: reference
 - [Автономия и контроль](autonomy.md)
 - [Безопасность и секреты](security.md)
 - [Проверки качества и мутации](quality.md)
-- [Checks на практике: gate, которые ловят то, что агент пропускает](checks.md)
+- [Checks: gate, которые ловят то, что агент пропускает](checks.md)
 - [Оценка агентов и навыков](evaluation.md)
 - [Выбор модели и reasoning effort](models.md)
 - [Контекст и сжатие](context.md)
