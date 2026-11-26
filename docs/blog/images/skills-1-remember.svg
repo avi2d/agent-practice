@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 170" role="img"><title>Инструкция в файле, модель решает ее прочитать, правило не применяется и нет записи</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line x1="230" y1="95" x2="260" y2="95" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="470" y1="95" x2="500" y2="95" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="710" y1="95" x2="740" y2="95" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="20" y="60" width="210" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="125.0" y="95.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Инструкция в файле</text>
+<rect x="260" y="60" width="210" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="365.0" y="95.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Модель решает, читать ли</text>
+<rect x="500" y="60" width="210" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="605.0" y="95.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Правило не применилось</text>
+<rect x="740" y="60" width="230" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="855.0" y="95.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Ни одна запись не сохранилась</text>
+</svg>

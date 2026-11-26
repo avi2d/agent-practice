@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 300" role="img"><title>Путь инструкции от Body через Hub и Dispatcher к разговору модели, с журналом и сравнением</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e1e1e"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line x1="220" y1="85" x2="270" y2="85" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="470" y1="85" x2="520" y2="85" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="720" y1="85" x2="770" y2="85" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="620" y1="120" x2="620" y2="190" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="870" y1="120" x2="870" y2="190" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="20" y="50" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="120.0" y="85.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Body в библиотеке</text>
+<rect x="270" y="50" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="370.0" y="85.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Hub с ссылками</text>
+<rect x="520" y="50" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="620.0" y="85.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Dispatcher по условию</text>
+<rect x="770" y="50" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="870.0" y="85.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Разговор модели</text>
+<rect x="520" y="190" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="620.0" y="225.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Журнал решения</text>
+<rect x="770" y="190" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e1e1e" stroke-width="2"/>
+<text x="870.0" y="225.0" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="16" fill="#1e1e1e">Сравнение программой</text>
+</svg>
