@@ -117,23 +117,23 @@ kind: explanation
 Там человек помнил, чего требует задача, что умеет каждая модель и сколько осталось на каждой подписке.
 Здесь вид работы и цену ошибки держат правила, остаток квоты читает программа, а причина каждого выбора лежит в записи.
 
-## Какими будут Orc и Subquo
+## Как это устроено в Orc и Subquo
 
-Orc будет оркестратором с открытым кодом, а Subquo будет читать квоту платных подписок, чтобы вместе избавить человека от выбора модели.
+Orc это оркестратор с открытым кодом, а Subquo читает остаток квоты платных подписок, и вместе они снимают с человека выбор модели.
 Схема ниже собирает все картинки статьи в одну.
 
-![Путь задачи в будущих Orc и Subquo: вид работы, правило, кандидаты, snapshot с остатком квоты, модели для ролей, запись выбора и dashboard](images/models-orc.svg)
+![Путь задачи в Orc и Subquo: вид работы, правило, кандидаты, snapshot с остатком квоты, модели для ролей, запись выбора и dashboard](images/models-orc.svg)
 
-*Схема 6: Subquo сообщит остаток квоты, Orc выберет по правилам модель и reasoning effort, а человек напишет правила и прочитает записи.*
+*Схема 6: Subquo сообщает остаток квоты, Orc выбирает по правилам модель и reasoning effort, а человек пишет правила и читает записи.*
 
 ## Ресурсы
 
-- [Как Orc и Subquo выберут модель](https://avi2d.github.io/agent-practice/blog/models-orc.html): интерактивная версия схемы 6
+- [Как Orc и Subquo выбирают модель](https://avi2d.github.io/agent-practice/blog/models-orc.html): интерактивная версия схемы 6
 - [Orc](https://github.com/avi2d/orc): исходный код оркестратора
-- [Видение Orc](https://github.com/avi2d/orc/blob/main/VISION.md): каким Orc должен стать
-- [Документация Orc](https://avi2d.github.io/orc/): как Orc работает сегодня
+- [Видение Orc](https://github.com/avi2d/orc/blob/main/VISION.md): для чего Orc нужен и от чего он отказывается
+- [Документация Orc](https://avi2d.github.io/orc/): устройство и настройка Orc
 - [Subquo](https://github.com/avi2d/subquo): исходный код программы, которая читает остаток квоты
-- [Видение Subquo](https://github.com/avi2d/subquo/blob/main/VISION.md): каким Subquo должен стать
+- [Видение Subquo](https://github.com/avi2d/subquo/blob/main/VISION.md): для чего Subquo нужен и от чего он отказывается
 - [FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance](https://arxiv.org/abs/2305.05176v1): исследование каскада моделей, который снижает стоимость без потери точности
 - [RouteLLM: Learning to Route LLMs with Preference Data](https://arxiv.org/abs/2406.18665v4): исследование программы, которая для каждого запроса выбирает между сильной и слабой моделью
 - [Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing](https://arxiv.org/abs/2404.14618v1): исследование выбора между малой и большой моделью по предсказанной сложности запроса
