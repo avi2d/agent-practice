@@ -43,7 +43,7 @@ kind: explanation
 ## Related topics
 
 - [Выбранные тезисы](theses.md)
-- [Выбор модели и уровня рассуждения](models.md)
+- [Выбор модели и reasoning effort](models.md)
 - [Оркестрация агентов](orchestration.md)
 
 [acon]: https://arxiv.org/abs/2510.00615v3

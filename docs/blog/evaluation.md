@@ -58,7 +58,7 @@ kind: explanation
 
 - [Выбранные тезисы](theses.md)
 - [Проверки качества и мутации](quality.md)
-- [Выбор модели и уровня рассуждения](models.md)
+- [Выбор модели и reasoning effort](models.md)
 
 [swe]: https://arxiv.org/abs/2310.06770v3
 [sweagent]: https://arxiv.org/abs/2405.15793v3
