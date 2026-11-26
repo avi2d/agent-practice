@@ -10,9 +10,12 @@ Subagents are not needed to protect context from poisoning, but orchestration, t
 Current models handle metaprogramming well, so I do not think subagents are needed to protect context from poisoning.
 That is my answer from 2026-11-22, and no file in the setup holds it.
 Orchestration is a different matter, because a task has to wait until its conditions hold, start on a machine with room, and report what its run did.
-The setup's VISION states this aim as direction: a captain directs fleets of agent workers from one place instead of tending each machine, [L3-L4][src1].
-The owner merges.
-The setup's VISION states this rule as direction: the setup pushes the task branch and opens the proposal, and only the owner merges, pushes to main or deletes, [L17][src2].
+The setup's VISION states this aim: a captain directs fleets of agent workers from one place instead of tending each machine, [L3-L4][src1].
+The project's rules decide who merges.
+The setup's VISION states this rule: the setup pushes the task branch and opens the proposal, [L17-L20][src2].
+The owner merges unless the project lets the beat merge a green pull request, [L17-L20][src2].
+A release, a deletion, a workflow change or a secret change waits for the owner on every project, [L17-L20][src2].
+Only the owner pushes to main or deletes, [L17-L20][src2].
 
 ## Where the setup holds it
 
@@ -40,7 +43,7 @@ The setup's VISION states this rule as direction: the setup pushes the task bran
 - **The backlog** names why a task waits: no priority, held, parked, depends, decision or room, [L44-L50][src24].
 
 [src1]: https://github.com/avi2d/orc/blob/6b8142d4288f592f0615a14ae286967f12357751/VISION.md#L3-L4
-[src2]: https://github.com/avi2d/orc/blob/6b8142d4288f592f0615a14ae286967f12357751/VISION.md#L17
+[src2]: https://github.com/avi2d/orc/blob/db57734857f7e98d98b9dca6fb5ff3f5bda82fac/VISION.md#L17-L20
 [src3]: https://github.com/avi2d/orc/blob/6b8142d4288f592f0615a14ae286967f12357751/docs/concepts/backlog.md#L8-L9
 [src4]: https://github.com/avi2d/orc/blob/6b8142d4288f592f0615a14ae286967f12357751/docs/concepts/backlog.md#L15
 [src5]: https://github.com/avi2d/orc/blob/6b8142d4288f592f0615a14ae286967f12357751/docs/concepts/backlog.md#L16
