@@ -12,7 +12,7 @@ kind: reference
 - [Безопасность и секреты](security.md)
 - [Проверки качества и мутации](quality.md)
 - [Оценка агентов и навыков](evaluation.md)
-- [Выбор модели и уровня рассуждения](models.md)
+- [Выбор модели и reasoning effort](models.md)
 - [Контекст и сжатие](context.md)
 - [Документация, спецификации и комментарии](documentation.md)
 
