@@ -42,10 +42,10 @@ const N=[["human", "Человек", "Я описываю работу обыч�
 const hl=document.getElementById('hl'),hlr=document.getElementById('hlr'),hots=[...document.querySelectorAll('.hot')];
 function show(i){cur=i;const r=hots[i].querySelector('rect');for(const a of ['x','y','width','height'])hlr.setAttribute(a,r.getAttribute(a));hl.classList.add('on');
 document.getElementById('t').textContent=N[i][1];document.getElementById('d').textContent=N[i][2];
-document.getElementById('count').textContent=(i+1)+' из '+N.length;const w=document.querySelector('.wrap');if(w.scrollWidth>w.clientWidth){const hb=hots[i].getBoundingClientRect(),wb=w.getBoundingClientRect();w.scrollBy({left:hb.left+hb.width/2-(wb.left+wb.width/2),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}prev.disabled=i<=0;next.disabled=i>=N.length-1}
+document.getElementById('count').textContent=(i+1)+' из '+N.length;const w=document.querySelector('.wrap'),behavior=matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',hb=hots[i].getBoundingClientRect();if(w.scrollWidth>w.clientWidth){const wb=w.getBoundingClientRect();w.scrollBy({left:hb.left+hb.width/2-(wb.left+wb.width/2),behavior})}const side=document.querySelector('.side'),free=getComputedStyle(side.parentElement).display==='block'?side.getBoundingClientRect().top:innerHeight;if(hb.top<0||hb.bottom>free)scrollBy({top:hb.top+hb.height/2-free/2,behavior});prev.disabled=i<=0;next.disabled=i>=N.length-1}
 hots.forEach((h,i)=>{h.addEventListener('click',()=>show(i));h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(i)}})});
 const prev=document.getElementById('prev'),next=document.getElementById('next');prev.disabled=true;
 prev.onclick=()=>cur>0&&show(cur-1);next.onclick=()=>show(Math.min(cur+1,N.length-1));
-document.addEventListener('keydown',e=>{if(e.target.closest&&e.target.closest('button'))return;if(e.key==='ArrowRight')next.click();if(e.key==='ArrowLeft')prev.click()});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next.click();if(e.key==='ArrowLeft')prev.click()});
 document.getElementById('count').textContent=N.length+' шагов';
 </script></body></html>
