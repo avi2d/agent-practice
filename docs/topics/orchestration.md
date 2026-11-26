@@ -12,8 +12,10 @@ That is my answer from 2026-11-22, and no file in the setup holds it.
 Orchestration is a different matter, because a task has to wait until its conditions hold, start on a machine with room, and report what its run did.
 The setup's VISION states this aim: a captain directs fleets of agent workers from one place instead of tending each machine, [L3-L4][src1].
 The project's rules decide who merges.
-The setup's VISION states this rule: the setup pushes the task branch and opens the proposal, and the owner merges unless the project lets the beat merge a green pull request, [L17-L20][src2].
-A release, a deletion, a workflow change or a secret change waits for the owner on every project, and only the owner pushes to main or deletes, [L17-L20][src2].
+The setup's VISION states this rule: the setup pushes the task branch and opens the proposal, [L17-L20][src2].
+The owner merges unless the project lets the beat merge a green pull request, [L17-L20][src2].
+A release, a deletion, a workflow change or a secret change waits for the owner on every project, [L17-L20][src2].
+Only the owner pushes to main or deletes, [L17-L20][src2].
 
 ## Where the setup holds it
 
