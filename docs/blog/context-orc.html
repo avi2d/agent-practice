@@ -28,7 +28,7 @@ button:disabled{opacity:.4;cursor:default}
 .card{border-left:4px solid var(--accent);padding:4px 0 4px 16px}
 .card h2{font-size:22px;margin:0 0 6px}
 .card p{margin:0}
-.back{margin-top:24px}
+
 a{color:#1864ab}
 @media (hover:hover) and (pointer:fine){button:hover{background:#f1f3f5}.hot:hover rect{stroke:#868e96;stroke-width:2;stroke-dasharray:6 6}}
 @media (max-width:1000px){.grid{display:block}.side{margin-top:20px}}
@@ -54,10 +54,9 @@ a{color:#1864ab}
 </section>
 </div>
 </div>
-<p class="back"><a href="context.md">Контекст и сжатие</a></p>
 </main>
 <script>
-const steps=[{"title":"Сессия","description":"Orc считает ходы и сжатия в каждой сессии. Ход включает ответ модели и её действия."},{"title":"Сжатие","description":"Агентная программа сжимает историю, когда свободного места остаётся меньше резерва для модели. Старую часть истории заменяет краткая запись, а последние ходы остаются без изменений."},{"title":"Порог передачи","description":"На 300 ходах или пятом сжатии Orc останавливает сессию и записывает handover.md."},{"title":"handover.md","description":"В записи остаются сделанные коммиты и причина остановки."},{"title":"Следующий запуск","description":"Следующий запуск на том же branch продолжает с handover.md, а не со сжатой истории."}];
+const steps=[{"title":"Сессия","description":"Orc считает ходы и сжатия в каждой сессии. Ход включает ответ модели и её действия."},{"title":"Сжатие","description":"Агентная программа сжимает историю, когда свободного места остаётся мало. Старую часть истории заменяет краткая запись, а последние ходы остаются без изменений."},{"title":"Порог передачи","description":"На 300 ходах или пятом сжатии Orc останавливает сессию и записывает handover.md."},{"title":"handover.md","description":"В записи остаются сделанные коммиты и причина остановки."},{"title":"Следующий запуск","description":"Следующий запуск на том же branch продолжает с handover.md, а не со сжатой истории."}];
 const hotspots=[...document.querySelectorAll('.hot')];
 const highlight=document.getElementById('highlight');
 const prev=document.getElementById('prev');
