@@ -12,7 +12,7 @@ That is my answer from 2026-11-22, and no file in the setup holds it.
 Orchestration is a different matter, because a task has to wait until its conditions hold, start on a machine with room, and report what its run did.
 The setup's VISION states this aim: a captain directs fleets of agent workers from one place instead of tending each machine, [L3-L4][src1].
 The setup pushes the branch and opens the pull request, and the owner merges it unless the project lets the beat merge a green one, [L17-L20][src2].
-Only the owner pushes to main or deletes, and a release, a workflow change or a secret change waits for the owner on every project, [L17-L20][src2].
+Only the owner pushes to main or deletes, and a release, deletion, workflow change or secret change waits for the owner on every project, [L17-L20][src2].
 
 ## Where the setup holds it
 
@@ -38,13 +38,6 @@ Only the owner pushes to main or deletes, and a release, a workflow change or a 
 - **A stopped ship run** can resume on its branch, [L52][src22].
 - **A run** past 300 turns or 5 compactions writes a handover note for the next run on that branch, [L54][src23].
 - **The backlog** names why a task waits: no priority, held, parked, depends, decision or room, [L44-L50][src24].
-
-## What did not work
-
-- A sandbox around each agent, with a network proxy and an allowlist, was the boundary until the owner's decision of 2026-11-26 chose one isolated space, [commit 8c556d3](https://github.com/avi2d/agent-practice/commit/8c556d3d5d5f6ef050866208f31cfd90cba6fbd7).
-- The article put the whole agent system in one isolated space, and dropped it because each agent machine is its own isolated Linux system, [commit 8c556d3](https://github.com/avi2d/agent-practice/commit/8c556d3d5d5f6ef050866208f31cfd90cba6fbd7).
-- The topic page called the merge rule a direction, and the Orc scheme showed today's timer and review mode.
-  The articles dropped both because the vision is stated in the present tense, and the roadmap belongs on Orc's site, [commit 38b69f8](https://github.com/avi2d/agent-practice/commit/38b69f8f250ea9f7c5e1e1b9257c0f6e729095a9).
 
 ## Related topics
 
