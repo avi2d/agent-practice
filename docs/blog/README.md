@@ -8,6 +8,7 @@ kind: reference
 ## Темы
 
 - [Оркестрация агентов](orchestration.md)
+- [Orc: агенты, которые ведут агентов](orc-sandboxes.md)
 - [Автономия и контроль](autonomy.md)
 - [Безопасность и секреты](security.md)
 - [Проверки качества и мутации](quality.md)
