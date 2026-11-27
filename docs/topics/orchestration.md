@@ -41,9 +41,10 @@ Only the owner pushes to main or deletes, and a release, a workflow change or a 
 
 ## What did not work
 
-- A sandbox around each agent with a network proxy and an allowlist was the boundary until the owner's decision of 2026-11-26 chose one isolated space, [commit 8c556d3](https://github.com/avi2d/agent-practice/commit/8c556d3d5d5f6ef050866208f31cfd90cba6fbd7).
-- The article put the whole agent system in one isolated space, which the article dropped because each agent machine is its own isolated Linux system, [commit 8c556d3](https://github.com/avi2d/agent-practice/commit/8c556d3d5d5f6ef050866208f31cfd90cba6fbd7).
-- The topic page called the merge rule a direction, and the Orc scheme showed today's timer and review mode, which the articles dropped because the vision is stated in the present tense and the roadmap belongs on Orc's site, [commit 38b69f8](https://github.com/avi2d/agent-practice/commit/38b69f8f250ea9f7c5e1e1b9257c0f6e729095a9).
+- A sandbox around each agent, with a network proxy and an allowlist, was the boundary until the owner's decision of 2026-11-26 chose one isolated space, [commit 8c556d3](https://github.com/avi2d/agent-practice/commit/8c556d3d5d5f6ef050866208f31cfd90cba6fbd7).
+- The article put the whole agent system in one isolated space, and dropped it because each agent machine is its own isolated Linux system, [commit 8c556d3](https://github.com/avi2d/agent-practice/commit/8c556d3d5d5f6ef050866208f31cfd90cba6fbd7).
+- The topic page called the merge rule a direction, and the Orc scheme showed today's timer and review mode.
+  The articles dropped both because the vision is stated in the present tense, and the roadmap belongs on Orc's site, [commit 38b69f8](https://github.com/avi2d/agent-practice/commit/38b69f8f250ea9f7c5e1e1b9257c0f6e729095a9).
 
 ## Related topics
 
