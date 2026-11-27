@@ -71,8 +71,6 @@ A passing lint ends with `checks-lint: <count> gate(s) pass`.
 | `docs/topics/` | one page per topic |
 | [`docs/blog/`](docs/blog/README.md) | Russian articles with sources and evidence limits for each thesis |
 | `docs/topics/README.md` | the parts of a topic page and the link forms of a source |
-| [`docs/results.md`](docs/results.md) | how to regenerate the GitHub activity snapshots |
-| `data/results/` | dated snapshots and their summaries |
 | `templates/topic.md` | the template a topic page starts from |
 | `templates/` | the checks kit's templates for every other doc |
 | `.github/workflows/` | the CI callers the checks kit writes |
