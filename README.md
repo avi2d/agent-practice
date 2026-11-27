@@ -55,7 +55,7 @@ To run the checks a pull request runs:
    bun run typecheck
    ```
 
-1. Run the tests under `tests/`:
+1. Run the tests:
 
    ```sh
    bun run test

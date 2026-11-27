@@ -13,6 +13,7 @@
   },
   "type": "module",
   "scripts": {
+    "build": "checks-effect-scope",
     "lint": "oxlint && checks-lint && sh scripts/check-blog-phrases.sh",
     "typecheck": "tsc --noEmit && effect-tsgo diagnostics --project tsconfig.json --format text --strict",
     "test": "checks-test",
@@ -20,6 +21,8 @@
   },
   "devDependencies": {
     "@avi2dg/checks": "0.112.0",
+    "@hughescr/stryker-bun-runner": "1.4.0",
+    "@stryker-mutator/core": "10.0.0",
     "@types/bun": "1.4.5"
   },
   "trustedDependencies": [
