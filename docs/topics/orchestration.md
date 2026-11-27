@@ -11,11 +11,8 @@ Current models handle metaprogramming well, so I do not think subagents are need
 That is my answer from 2026-11-22, and no file in the setup holds it.
 Orchestration is a different matter, because a task has to wait until its conditions hold, start on a machine with room, and report what its run did.
 The setup's VISION states this aim: a captain directs fleets of agent workers from one place instead of tending each machine, [L3-L4][src1].
-The project's rules decide who merges.
-The setup's VISION states this rule: the setup pushes the task branch and opens the proposal, [L17-L20][src2].
-The owner merges unless the project lets the beat merge a green pull request, [L17-L20][src2].
-A release, a deletion, a workflow change or a secret change waits for the owner on every project, [L17-L20][src2].
-Only the owner pushes to main or deletes, [L17-L20][src2].
+The setup pushes the branch and opens the pull request, and the owner merges it unless the project lets the beat merge a green one, [L17-L20][src2].
+Only the owner pushes to main or deletes, and a release, deletion, workflow change or secret change waits for the owner on every project, [L17-L20][src2].
 
 ## Where the setup holds it
 
@@ -41,6 +38,10 @@ Only the owner pushes to main or deletes, [L17-L20][src2].
 - **A stopped ship run** can resume on its branch, [L52][src22].
 - **A run** past 300 turns or 5 compactions writes a handover note for the next run on that branch, [L54][src23].
 - **The backlog** names why a task waits: no priority, held, parked, depends, decision or room, [L44-L50][src24].
+
+## Related topics
+
+- [Orchestration article](../blog/orchestration.md)
 
 [src1]: https://github.com/avi2d/orc/blob/6b8142d4288f592f0615a14ae286967f12357751/VISION.md#L3-L4
 [src2]: https://github.com/avi2d/orc/blob/db57734857f7e98d98b9dca6fb5ff3f5bda82fac/VISION.md#L17-L20
