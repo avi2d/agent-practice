@@ -21,12 +21,6 @@ export function sitePathOf(source: string): string | undefined {
   return inSite.endsWith(".md") ? inSite.slice(0, -".md".length) + "/index.html" : inSite;
 }
 
-export function collidingPathsOf(paths: readonly string[]): readonly string[] {
-  const counts = new Map<string, number>();
-  for (const path of paths) counts.set(path, (counts.get(path) ?? 0) + 1);
-  return [...counts].flatMap(([path, count]) => (count > 1 ? [path] : []));
-}
-
 export function relativePath(from: string, to: string): string {
   const fromDirectories = from.split("/").slice(0, -1);
   const target = to.split("/");
@@ -42,7 +36,6 @@ function isOutside(href: string): boolean {
 export function siteHrefOf(href: string, source: string): string {
   const page = sitePathOf(source);
   if (page === undefined) return href;
-  if (href.startsWith(SITE)) return relativePath(page, href.slice(SITE.length) || "index.html");
   if (isOutside(href)) return href;
   const url = new URL(href, REPOSITORY_ROOT + source);
   const target = decodeURIComponent(url.pathname.slice(1));

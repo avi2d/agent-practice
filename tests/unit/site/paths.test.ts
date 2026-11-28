@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { collidingPathsOf, langOf, relativePath, siteHrefOf, sitePathOf, targetOf } from "../../../src/site/paths.ts";
+import { langOf, relativePath, siteHrefOf, sitePathOf, targetOf } from "../../../src/site/paths.ts";
 
 test("each source publishes at the address the site plan gives, not at its Markdown name", () => {
   expect(sitePathOf("docs/blog/README.md")).toBe("index.html");
@@ -30,8 +30,8 @@ test("a link to a file the site leaves out goes to GitHub, not to a missing page
   expect(siteHrefOf("../../VISION.md", "docs/blog/README.md")).toBe("https://github.com/avi2d/agent-practice/blob/main/VISION.md");
 });
 
-test("a full link to the site becomes relative, so it works before the site is live", () => {
-  expect(siteHrefOf("https://avi2d.github.io/agent-practice/blog/checks.html", "docs/blog/checks.md")).toBe("../checks.html");
+test("a full link to the site stays as the article writes it, not rewritten to a relative path", () => {
+  expect(siteHrefOf("https://avi2d.github.io/agent-practice/blog/checks.html", "docs/blog/checks.md")).toBe("https://avi2d.github.io/agent-practice/blog/checks.html");
 });
 
 test("outside links and same-page anchors stay as written, not rewritten as files", () => {
@@ -47,7 +47,6 @@ test("a link's target is the file and anchor it names, and an outside link has n
   expect(targetOf("https://github.com/avi2d/orc", "index.html")).toBeUndefined();
 });
 
-test("only a path two sources share counts as a collision, not every path", () => {
-  expect(collidingPathsOf(["a", "b", "a", "c", "a"])).toEqual(["a"]);
-  expect(collidingPathsOf(["a", "b"])).toEqual([]);
+test("a full link to the site is checked against the built file, not skipped as an outside link", () => {
+  expect(targetOf("https://avi2d.github.io/agent-practice/blog/checks.html", "blog/checks/index.html")).toEqual({ path: "blog/checks.html", anchor: "" });
 });

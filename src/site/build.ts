@@ -2,17 +2,13 @@ import { main } from "@avi2dg/checks/core/bun-platform.ts";
 import { Console, Effect, FileSystem, Path, Schema } from "effect";
 import { brokenLinksOf } from "./links.ts";
 import { renderPage } from "./page.ts";
-import { collidingPathsOf, sitePathOf } from "./paths.ts";
+import { sitePathOf } from "./paths.ts";
 
 const SOURCE_DIRECTORIES = ["docs/blog", "docs/topics"] as const;
 const OUTPUT = "_site";
 const DRAWING_SOURCE = ".excalidraw";
 
 export type SiteFile = { readonly path: string; readonly body: string } | { readonly path: string; readonly copyOf: string };
-
-export class CollidingPaths extends Schema.TaggedError<CollidingPaths>()("CollidingPaths", {
-  message: Schema.String,
-}) {}
 
 export class BrokenLinks extends Schema.TaggedError<BrokenLinks>()("BrokenLinks", {
   message: Schema.String,
@@ -49,8 +45,6 @@ const siteFileOf = Effect.fn("siteFileOf")(function* (root: string, source: stri
 export const siteFilesOf = Effect.fn("siteFilesOf")(function* (root: string) {
   const sources = yield* sourcesOf(root);
   const files: readonly SiteFile[] = (yield* Effect.forEach(sources, (source) => siteFileOf(root, source))).flat();
-  const colliding = collidingPathsOf(files.map(({ path }) => path));
-  if (colliding.length > 0) return yield* new CollidingPaths({ message: `two sources publish to ${colliding.join(", ")}` });
   return files;
 });
 

@@ -79,10 +79,7 @@ function bodyOf(html: string, source: string, slugs: readonly string[]): string 
     })
     .on("img[src]", {
       element(image) {
-        const src = siteHrefOf(image.getAttribute("src") ?? "", source);
-        image.setAttribute("src", src);
-        image.before(`<a href="${src}">`, { html: true });
-        image.after("</a>", { html: true });
+        image.setAttribute("src", siteHrefOf(image.getAttribute("src") ?? "", source));
       },
     })
     .transform(html);
