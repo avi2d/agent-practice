@@ -13,7 +13,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "checks-effect-scope",
+    "build": "checks-effect-scope && bun run site",
     "site": "bun src/site/build.ts",
     "lint": "oxlint && checks-lint && sh scripts/check-blog-phrases.sh",
     "typecheck": "tsc --noEmit && effect-tsgo diagnostics --project tsconfig.json --format text --strict",

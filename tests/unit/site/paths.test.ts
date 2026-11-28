@@ -22,7 +22,7 @@ test("a relative path climbs out of the page's folder, not out of the site root"
 });
 
 test("a link to another article keeps its anchor and leads to that article's page", () => {
-  expect(siteHrefOf("quality.md#принципы", "docs/blog/checks.md")).toBe("../quality/index.html#принципы");
+  expect(siteHrefOf("quality.md#принципы", "docs/blog/checks.md")).toBe("../quality/index.html#%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B");
   expect(siteHrefOf("../topics/README.md", "docs/blog/README.md")).toBe("topics/index.html");
 });
 
