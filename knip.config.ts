@@ -1,3 +1,3 @@
 import { defineConfig } from "@avi2dg/checks/knip";
 
-export default defineConfig({ entry: ["src/index.ts"] });
+export default defineConfig({ entry: ["src/site/build.ts"] });

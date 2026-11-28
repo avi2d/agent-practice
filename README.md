@@ -4,6 +4,7 @@ How and why I work with coding agents.
 The Russian articles in [`docs/blog/`](docs/blog/README.md) are the text to read, with the sources and evidence limits for each thesis.
 Each page under `docs/topics/` takes one topic, such as quality gates, subagents or evals, and holds my English working position on it, which the articles draw on.
 A page gives the reasons, links to the file and line that carry the position, and names what did not work.
+Both are published as HTML at [avi2d.github.io/agent-practice](https://avi2d.github.io/agent-practice/).
 
 ## Before you begin
 
@@ -63,6 +64,21 @@ To run the checks a pull request runs:
 
 A passing lint ends with `checks-lint: <count> gate(s) pass`.
 
+## Build the site
+
+To build the HTML site from `docs/blog/` and `docs/topics/`:
+
+1. Run the build from the repository root:
+
+   ```sh
+   bun run site
+   ```
+
+1. Open `_site/index.html`.
+
+The build stops and names each link, anchor or image that leads nowhere.
+Every merge to `main` publishes the site.
+
 ## Where things are
 
 | Path | What it holds |
@@ -71,6 +87,8 @@ A passing lint ends with `checks-lint: <count> gate(s) pass`.
 | `docs/topics/` | one page per topic |
 | [`docs/blog/`](docs/blog/README.md) | Russian articles with sources and evidence limits for each thesis |
 | `docs/topics/README.md` | the parts of a topic page and the link forms of a source |
+| `src/site/` | the script that builds the HTML site |
+| `tests/unit/` | the tests |
 | `templates/topic.md` | the template a topic page starts from |
 | `templates/` | the checks kit's templates for every other doc |
 | `.github/workflows/` | the CI callers the checks kit writes |

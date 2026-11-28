@@ -13,17 +13,20 @@
   },
   "type": "module",
   "scripts": {
-    "build": "checks-effect-scope",
+    "build": "checks-effect-scope && bun run site",
+    "site": "bun src/site/build.ts",
     "lint": "oxlint && checks-lint && sh scripts/check-blog-phrases.sh",
     "typecheck": "tsc --noEmit && effect-tsgo diagnostics --project tsconfig.json --format text --strict",
     "test": "checks-test",
-    "test:fast": "checks-test --changed"
+    "test:fast": "checks-test --changed",
+    "test:unit": "checks-test --tier=unit"
   },
   "devDependencies": {
     "@avi2dg/checks": "0.112.0",
     "@hughescr/stryker-bun-runner": "1.4.0",
     "@stryker-mutator/core": "10.0.0",
-    "@types/bun": "1.4.5"
+    "@types/bun": "1.4.5",
+    "effect": "4.0.0"
   },
   "trustedDependencies": [
     "@swc/core"
